@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>St Patrick's International Secondary School</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>ST PATRICK'S INTERNATIONAL SECONDARY SCHOOL ICHI</h1>
+    <p>Motto: In Search of Wisdom, Knowledge and Truth</p>
+</header>
+
+<nav>
+    <button onclick="goTo('home')">Home</button>
+    <button onclick="goTo('about')">About</button>
+    <button onclick="goTo('admission')">Admission</button>
+    <button onclick="goTo('gallery')">Gallery</button>
+    <button onclick="goTo('contact')">Contact</button>
+</nav>
+
+<section class="hero">
+    <h2>ADMISSION IN PROGRESS 🚨</h2>
+    <button onclick="openForm()">Apply Now</button>
+</section>
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>We provide quality education, discipline and skill development.</p>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>We are a Catholic mission school focused on academic excellence and character formation.</p>
+
+    <div class="card-container">
+        <div class="card">Experienced Teachers</div>
+        <div class="card">Conducive Environment</div>
+        <div class="card">Academic Excellence</div>
+        <div class="card">Skill Acquisition</div>
+    </div>
+</section>
+
+<section id="admission">
+    <h2>Admission Details</h2>
+    <p>JSS 1–3 / SSS 1–2</p>
+
+    <ul>
+        <li>June 6, 2026</li>
+        <li>July 18, 2026</li>
+        <li>August 8, 2026</li>
+    </ul>
+
+    <button onclick="whatsapp()">Chat on WhatsApp</button>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <img src="St Patrick's.jdp" class="gallery-img">
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>📞 +2348169683044</p>
+    <p>📞 +2348086493274</p>
+
+    <button onclick="whatsapp()">Message School</button>
+</section>
+
+<footer>
+    Excellence is Our Utmost Priority
+</footer>
+
+<!-- FORM POPUP -->
+<div id="formBox" class="modal">
+    <div class="modal-content">
+        <h3>Admission Form</h3>
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="text" id="class" placeholder="Class Applying For">
+        <textarea id="message" placeholder="Message"></textarea>
+
+        <button onclick="submitForm()">Submit</button>
+        <button onclick="closeForm()">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
